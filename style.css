@@ -6,8 +6,8 @@
       "top-3 top-3 top-3"
       "pop-countries pop-countries pop-countries"
       "pop-destinations pop-destinations pop-destinations"
-      "footer footer footer";
-    grid-template-columns: 3fr 7fr;
+      "user-reviews user-reviews user-reviews"
+      "footer footer footer"
 }
 
 header {
@@ -16,10 +16,33 @@ header {
     color: #fff;
     text-align: center;
     grid-area: header;
+    font-family: 'Roboto', sans-serif;
 }
 
 #search-bar{
     grid-area: search-bar;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+#top-3-places {
+    grid-area: top-3;
+}
+
+#popular-countries {
+    grid-area: pop-countries;
+}
+
+#popular-destinations {
+    grid-area: pop-destinations;
+}
+
+#user-reviews{
+    grid-area: user-reviews;
+    display: flex;
 }
 
 footer {
