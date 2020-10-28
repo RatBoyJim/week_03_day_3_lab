@@ -1,0 +1,32 @@
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "search-bar search-bar search-bar"
+      "top-3 top-3 top-3"
+      "pop-countries pop-countries pop-countries"
+      "pop-destinations pop-destinations pop-destinations"
+      "footer footer footer";
+    grid-template-columns: 3fr 7fr;
+}
+
+header {
+    padding: 16px;
+    background-color: lightblue;
+    color: #fff;
+    text-align: center;
+    grid-area: header;
+}
+
+#search-bar{
+    grid-area: search-bar;
+}
+
+footer {
+    padding: 16px;
+    background-color: lightblue;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    grid-area: footer;
+}
